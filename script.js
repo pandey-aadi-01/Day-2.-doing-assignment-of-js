@@ -89,3 +89,27 @@
 // }
 
 // console.log(maxKey);
+
+// 5. **Flatten object of arrays into one array**
+//     - Input:
+
+//         ```jsx
+//         { fruits: ["apple", "banana"], veggies: ["carrot", "pea"] }
+//         ```
+
+// const data = {
+//   fruits: ["apple", "banana"],
+//   veggies: ["carrot", "pea"],
+// };
+
+// let result = [];
+
+// for (let key in data) {
+//   let arr = data[key];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(arr[i]);
+//   }
+// }
+
+// console.log(result);
