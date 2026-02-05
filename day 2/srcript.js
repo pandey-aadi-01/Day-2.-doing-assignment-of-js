@@ -38,20 +38,32 @@
 
 // console.log(result);
 //  6.Group people by city
-const input = [
-  { name: "A", city: "Delhi" },
-  { name: "B", city: "Mumbai" },
-  { name: "C", city: "Delhi" },
-];
+// const input = [
+//   { name: "A", city: "Delhi" },
+//   { name: "B", city: "Mumbai" },
+//   { name: "C", city: "Delhi" },
+// ];
 
-const result = {};
+// const result = {};
 
-for (let i = 0; i < input.length; i++) {
-  if (!result[input[i].city]) {
-    result[input[i].city] = [];
-  }
-  if (result[input[i].city]) {
-    result[input[i].city].push(input[i].name);
-  }
-}
+// for (let i = 0; i < input.length; i++) {
+//   if (!result[input[i].city]) {
+//     result[input[i].city] = [];
+//   }
+//   if (result[input[i].city]) {
+//     result[input[i].city].push(input[i].name);
+//   }
+// }
+// console.log(result);
+
+// 7. **Filter object by values > 50**
+//         { a: 20, b: 60, c: 40, d: 90 }
+const input = { a: 20, b: 60, c: 40, d: 90 };
+
+const result = Object.fromEntries(
+  Object.entries(input).filter(function (item) {
+    return item[1] > 50;
+  }),
+);
+
 console.log(result);
